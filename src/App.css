@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open Sans',sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* Background */
+
+.background {
+    position: absolute;
+    width: 1440px;
+    height: 1629px;
+    left: 0px;
+    top: 0px;
+    background: #EAEAEA;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Desktop top */
+
+.header {
+    position: absolute;
+    width: 1109.89px;
+    height: 60px;
+    left: 165px;
+    top: 0px;
+    background-color: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+.logo {
+    position: absolute;
+    left: 0%;
+    right: 92.34%;
+    top: 25%;
+    bottom: 25%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #101010;
 }
 
-.App-link {
-  color: #61dafb;
+/* Контейнер с понравившимся и корзиной */
+
+
+
+/* Корзина */
+
+.basket {
+    position: absolute;
+    left: 89.51%;
+    right: -0.27%;
+    top: 0%;
+    bottom: 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 1 счётчик добавленного в корзину */
+
+.one {
+    position: absolute;
+    left: 98.75%;
+    right: -0.19%;
+    top: 21.67%;
+    bottom: 48.33%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
 }
+
+/* Ellipse 10 оранж кружок над корзиной*/
+
+.ellipse10{
+    position: absolute;
+    left: 98.7%;
+    right: -0.27%;
+    top: 21.67%;
+    bottom: 49.33%;
+
+    background: #FFA542;
+}
+
+.vector {
+    position: absolute;
+    left: 97.35%;
+    right: 0.56%;
+    top: 33.27%;
+    bottom: 28.07%;
+}
+
+/* Group 30 контейнер с понравившимся и цифрой-счётчиком*/
+
+.group30 {
+    position: absolute;
+    width: 62px;
+    height: 60px;
+    left: 993.49px;
+    top: 0px;
+}
+
+/* 2 */
+
+.notificationFav {
+    position: absolute;
+    left: 92.71%;
+    right: 5.72%;
+    top: 20%;
+    bottom: 50%;
+}
+
+.two {
+    position: absolute;
+    left: 93.03%;
+    right: 5.98%;
+    top: 20%;
+    bottom: 50%;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+}
+
+
+
+.picWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+
+
+
