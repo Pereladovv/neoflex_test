@@ -3,8 +3,9 @@ import Header from './Header';
 
 function App() {
   return (
-    <div className="background">
-        <Header/>
+    <div className="wrapper">
+      <Header/> 
+
     </div>
   );
 }
