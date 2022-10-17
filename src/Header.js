@@ -4,7 +4,7 @@ function Header() {
     return (
         
         <div className="header">
-            <div className="wrapper">    
+  
                 <div className="header_wrapper">
                     <a href="/" className="header-logo-link">
                         <img src="./img/svg/qpick-logo.svg" alt="QPICK" className="header-logo-pic" />
@@ -31,7 +31,6 @@ function Header() {
                     </nav>
                 </div>
             </div>
-        </div>
     );
   }
   

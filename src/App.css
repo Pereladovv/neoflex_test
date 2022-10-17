@@ -104,6 +104,73 @@ table {
          url('../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
   }
 
+/* montserrat-regular - latin-ext_cyrillic-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-500 - latin-ext_cyrillic-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-600 - latin-ext_cyrillic-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-700 - latin-ext_cyrillic-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-900 - latin-ext_cyrillic-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-latin-ext_cyrillic-ext-900.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+
+
 html{
     box-sizing: border-box;
 }
@@ -119,12 +186,7 @@ html{
     margin: 0 auto;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+
 
 .header_wrapper {
     display: flex;
@@ -156,8 +218,7 @@ html{
 /* Intro styles start */
 
 .intro {
-    height: 100vh;
-    padding-top: 88px;
+    padding-top: 28px;
 }
 
 .intro_title{
@@ -167,7 +228,7 @@ html{
     font-size: 20px;
     line-height: 24px;
     color: #838383;
-    margin-bottom: 20px;
+
 }
 
 
@@ -177,11 +238,113 @@ html{
   
 }
 
+.info_price{
+    display: flex;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFA542;
+}
+
+.productCard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 350px;
+    height: 405px;
+    margin-top: 30px;
+}
+
+.product img {
+    margin-top: 15px
+}
+
+.info{
+    width:310px;
+    height:75px;
+
+}
+
+.info h3 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1C1C27;
+}
+
+.rating_score {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #838383;
+}
+
+.namePrice{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.ratingBuy{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.addToCart{
+    font-family: 'Montserrat';
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    transition: 0.3s;
+}
+.addToCart:hover{
+    opacity: .5;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
+/* Footer styles start */
+.footer{
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 20px;
+    padding: 30px;
+    
+}
 
-
-
-
-
-
+.footer a{
+    font-family: 'Montserrat';
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+}
+/* Footer styles end */
