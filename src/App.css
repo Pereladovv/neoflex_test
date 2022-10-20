@@ -181,12 +181,12 @@ html{
 
 /* Header styles start */
 
+
+
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
 }
-
-
 
 .header_wrapper {
     display: flex;
@@ -203,6 +203,7 @@ html{
 
 .header_item{
     margin-right: 45px;
+    position: relative;
 }
 
 .header_item:last-child{
@@ -213,6 +214,18 @@ html{
     opacity: .5;
 }
 
+.shop_cart{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 17px;
+    min-height: 17px;
+    background: #FFA542;
+    z-index: 1000;
+    border-radius: 10px;
+} 
+
+
 /* Header styles end */
 
 /* Intro styles start */
@@ -222,20 +235,14 @@ html{
 }
 
 .intro_title{
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px;
     color: #838383;
-
 }
-
 
 /* Intro styles end */
 .rating{
     display: flex;
-  
 }
 
 .info_price{
@@ -256,13 +263,25 @@ html{
     background: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
-    width: 350px;
+    width: 31.5%;
     height: 405px;
     margin-top: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+/* .productCard:hover{
+box-shadow: -0.4px 3px 20px 9px rgb(0 0 0 / 10%);
+} */
+
+.product{
+    display: flex;
+    align-items: center;
+    min-height: 253px;
 }
 
 .product img {
-    margin-top: 15px
+    margin-top: 15px;
+    width: 100%;
 }
 
 .info{
@@ -283,6 +302,7 @@ html{
     font-size: 17px;
     line-height: 21px;
     color: #838383;
+    margin-left: 8px;
 }
 
 .namePrice{
@@ -315,21 +335,25 @@ html{
 }
 
 .cards{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
+
+
 /* Footer styles start */
 .footer{
+    display: flex;
+    justify-content: space-between;
     height: 150px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px 30px 0px 0px;
     margin-top: 20px;
-    padding: 30px;
-    
+
 }
 
 .footer a{
@@ -342,9 +366,29 @@ html{
     font-size: 17px;
     line-height: 21px;
     color: #000000;
+    margin-bottom: 10px;
 }
+
 .footer_links{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
+}
+
+.social_links{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 23px 0px 0px;
+}
+
+.footer_logo{
+    padding: 30px 0px 0px 30px;
+}
+
+.terms_link{
+    padding-top: 30px;
 }
 /* Footer styles end */

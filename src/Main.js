@@ -1,26 +1,21 @@
 import React from 'react';
 
-import ProductCard from './ProductCard';
+import Item from './Item';
 
 function Main(props) {
+    
     return (
             <main className="main">
-                <section className="intro">
+
+                 <section className="intro">
                     <div className="wrapper">
                         <h1 className="intro_title">
                             Наушники
                         </h1>
                         <div className="cards">
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
-                            <ProductCard/>
+                            {props.headphones.map(el => (
+                                <Item key={el.id} item={el} /> 
+                            ))}
                         </div>
                     </div>
                 </section>
