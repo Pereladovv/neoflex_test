@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
+import React, { useState } from 'react';
 
 
 function App() {
@@ -64,14 +65,25 @@ function App() {
         }
     ]
 
+    const orders = []
+    const [order, setOrder] = useState()
+
+    /* Функция добавления заказа */
+    function addToOrder(item) {
+        setOrder({orders: [...order.orders, item]})
+      }
+      
+    addToOrder = addToOrder.bind(this);
+
   return (
     <div className='wrapper'>
         <Header/>
-
-        <Main headphones = {items}/>
+        <Main headphones = {items} onAdd={addToOrder}/>
         <Footer/>
     </div>
   );
+
+
 }
 
 export default App;

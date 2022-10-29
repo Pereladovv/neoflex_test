@@ -230,6 +230,8 @@ html{
 
 /* Intro styles start */
 
+
+
 .intro {
     padding-top: 28px;
 }
@@ -269,9 +271,9 @@ html{
     transition: all 0.2s;
     cursor: pointer;
 }
-/* .productCard:hover{
+ .productCard:hover{
 box-shadow: -0.4px 3px 20px 9px rgb(0 0 0 / 10%);
-} */
+} 
 
 .product{
     display: flex;
@@ -339,6 +341,7 @@ box-shadow: -0.4px 3px 20px 9px rgb(0 0 0 / 10%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+/*     justify-content: flex-start; */
 }
 
 

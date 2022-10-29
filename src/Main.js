@@ -12,11 +12,11 @@ function Main(props) {
                         <h1 className="intro_title">
                             Наушники
                         </h1>
-                        <div className="cards">
+                        <ul className="cards">
                             {props.headphones.map(el => (
-                                <Item key={el.id} item={el} /> 
+                                <Item key={el.id} item={el} onAdd={props.onAdd}/> 
                             ))}
-                        </div>
+                        </ul>
                     </div>
                 </section>
             </main>
