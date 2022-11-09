@@ -1,24 +1,25 @@
 import React from 'react';
 
 import Item from './Item';
+import Headphones from './titles/Headphones';
+import WirelessHeadphones from './titles/WirelessHeadphones';
 
 function Main(props) {
     
     return (
             <main className="main">
-
-                 <section className="intro">
-                    <div className="wrapper">
-                        <h1 className="intro_title">
-                            Наушники
-                        </h1>
-                        <ul className="cards">
-                            {props.headphones.map(el => (
-                                <Item key={el.id} item={el} onAdd={props.onAdd}/> 
-                            ))}
-                        </ul>
+                    <Headphones />
+                    <div className="products-wrapper">
+                        {props.earpods.map(el => (
+                            <Item key={el.id} item={el}/> 
+                        ))}
                     </div>
-                </section>
+                    <WirelessHeadphones />
+                    <div className="products-wrapper">                    
+                        {props.airpods.map(elem => (
+                            <Item key={elem.id} item={elem}/> 
+                        ))}
+                    </div>
             </main>
     );
 }
